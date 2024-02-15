@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francesco De Lorenzi</title>
+<style>
+    body {
+        background-color: black;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+    .ascii-art {
+        white-space: pre;
+        line-height: 1;
+        margin-bottom: 30px;
+        font-size: 10px; /* Smaller font size for the ASCII art to make it fit on mobile screens */
+    }
+    .footer {
+        position: fixed;
+        bottom: 10px;
+        width: 100%;
+        font-size: 14px; /* Adjusted the font size for clarity on mobile */
+    }
+    p {
+        margin: 5px 0;
+        font-size: 16px; /* Adjusted base page font size */
+    }
+    .highlight {
+        display: inline-block;
+        text-align: left;
+        max-width: 600px; /* Max-width to prevent stretching on large screens */
+        margin: 0 auto; /* Auto margins for horizontal centering */
+    }
+    @media (max-width: 600px) {
+        .highlight {
+            width: 90%; /* Use a percentage width for small screens for better readability */
+        }
+        .footer {
+            font-size: 12px; /* Smaller font for the footer on mobile devices */
+        }
+        p {
+            font-size: 14px; /* Smaller font for text on mobile devices */
+        }
+        /*.ascii-art {
+            display: none; /* Hide ASCII art on very small screens */
+        }*/
+    }
+</style>
+</head>
+<body>
+    <header class="ascii-art">
+____  _____ _     ___  ____  _____ _   _ ________ 
+|  _ \| ____| |   / _ \|  _ \| ____| \ | |__  /_ _|
+| | | |  _| | |  | | | | |_) |  _| |  \| | / / | | 
+| |_| | |___| |__| |_| |  _ <| |___| |\  |/ /_ | | 
+|____/|_____|_____\___/|_| \_\_____|_| \_/____|___| 
+    </header>
+    
+    <main>
+        <p><strong>10+ Years of Secure Software Development & API Integration Expertise | Tech Leadership </strong></p>
+        <div class="highlight">
+            <ul>
+                <li>🚀 Former Owner of a Global Software Consultancy firm with 80+ contractors led in 10+ years.</li>
+                <li>📈 Proficient in a wide range of Development Stacks and over 60 third-party REST/SOAP APIs.</li>
+                <li>📊 Led Projects across various Industries from Startups to larger Enterprises.</li>
+                <li>💼 <b>Technical Leader and Cybersecurity Advocate</b> since 2005, developed a malware removal tool at age 12.</li>
+                <li>🔍 <b>Secure Software Development Mentor</b>: DevSecOps, OWASP, Penetration Testing, Reverse Engineering</li>
+				<li>⚖️ <b>Computer Forensics Consultant</b>: Led Investigations for Law Firms and Law Enforcement in Criminal/Civil Cases</li>
+            </ul>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        Let's connect! <a href="mailto:francesco@delorenzi.me" style="color: white;">francesco@delorenzi.me</a>
+    </footer>
+</body>
+</html>
