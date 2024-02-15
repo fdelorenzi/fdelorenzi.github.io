@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Software Development | API Integration Expert | Tech Leader</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="nav" class="nav">
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            &#9776; Menu
+        </a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="press.html">Press</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacts.html">Contacts</a>
+    </div>
+
+    <div class="container">
+    <header class="ascii-art">
+    <a href="index.html">
+____  _____ _     ___  ____  _____ _   _ ________ 
+|  _ \| ____| |   / _ \|  _ \| ____| \ | |__  /_ _|
+| | | |  _| | |  | | | | |_) |  _| |  \| | / / | | 
+| |_| | |___| |__| |_| |  _ <| |___| |\  |/ /_ | | 
+|____/|_____|_____\___/|_| \_\_____|_| \_/____|___|
+</a> 
+    </header>
+        <main>
+            <h1>Press Articles & Videos</h1>
+            <p> Under Construction</p>
+            <div id="article-list">
+                <!-- Article list will be loaded here by JavaScript -->
+            </div>
+        </main>
+    </div>
+    
+    <footer class="footer">
+        Let's Connect: <a href="mailto:francesco@delorenzi.me" style="color: white;">francesco@delorenzi.me</a> - Bari (IT) - Porto (PT) - Digital Nomad
+
+    </footer>
+    <script>
+        // Mock data for articles
+        const articles = [
+  {
+    title: 'KillSgrunt Removal Tool Development',
+    description: 'Over 300,000 downloads, identified and removed Sgrunt/Master69.',
+    country: 'Italy',
+    url: '',
+    date: ''
+  },
+  {
+    title: 'Conference @ Liceo Oriani Corato BA IT',
+    description: '',
+    country: 'Italy',
+    url: 'https://www.youtube.com/watch?v=SWNv2M61QNE',
+    date: ''
+  },
+  {
+    title: 'Reviewed by Punto-Informatico',
+    description: 'ICT online publication review.',
+    country: 'Italy',
+    url: '',
+    date: ''
+  },
+  {
+    title: 'Interviewed by Panorama',
+    description: 'Article by G. Castellano.',
+    country: 'Italy',
+    url: '',
+    date: ''
+  },
+  {
+    title: 'Photographic Editorial by ANSA',
+    description: 'Covered by ANSA\'s press releases.',
+    country: 'Italy',
+    url: '',
+    date: ''
+  },
+  {
+    title: 'Interviewed by Unomattina (RAIUNO)',
+    description: 'Featured on national television.',
+    country: 'Italy',
+    url: '',
+    date: '2006-06-07'
+  },
+  {
+    title: 'Interviewed by BBC News & World Service',
+    description: 'Christian Fraser\'s service.',
+    country: 'UK',
+    url: '',
+    date: ''
+  },
+  {
+    title: 'Interviewed by SAT2000',
+    description: '',
+    country: 'Italy',
+    url: '',
+    date: ''
+  },
+  {
+    title: 'Featured in Gazzetta del Mezzogiorno',
+    description: 'Coverage in various articles.',
+    country: 'Italy',
+    url: '',
+    date: ''
+  },
+  {
+    title: 'Conference @ ITC V.Giordano Bitonto BA IT',
+    description: '',
+    country: 'Italy',
+    url: 'https://www.youtube.com/watch?v=rZJAwuEcBNQ',
+    date: ''
+  },
+  {
+    title: 'Interview by Italian Indie',
+    description: '',
+    country: 'Italy',
+    url: '',
+    date: ''
+  },
+  {
+    title: 'Received L\'Alfiere del Sud Award',
+    description: 'Recognized for contributions in IT and Web.',
+    country: 'Italy',
+    url: '',
+    date: '2011-05-21'
+  }
+        ];
+
+        // Function to create an article element
+        function createArticleElement(article) {
+            const articleEl = document.createElement('div');
+            articleEl.className = 'article';
+            const date = article.date ? '- ' + new Date(article.date).toLocaleDateString() : '';
+            articleEl.innerHTML = `
+                <div class="article-title">${article.title}</div>
+                <div class="article-description no-strip-text">${article.description}</div>
+                <div class="article-meta">${article.country} ${date}</div>
+            `;
+            if(article.url) {
+                articleEl.innerHTML = articleEl.innerHTML +
+                `<a class="article-link" href="${article.url}" target="_blank">Link</a>`;
+            }
+            return articleEl;
+        }
+
+        // Load the articles into the page
+        const articleList = document.getElementById('article-list');
+        articles.forEach(article => {
+            articleList.appendChild(createArticleElement(article));
+        });
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

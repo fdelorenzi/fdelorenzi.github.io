@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Software Development | API Integration Expert | Tech Leader</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="nav" class="nav">
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            &#9776; Menu
+        </a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="press.html">Press</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacts.html">Contacts</a>
+    </div>
+
+    <div class="container">
+    <header class="ascii-art">
+    <a href="index.html">
+____  _____ _     ___  ____  _____ _   _ ________ 
+|  _ \| ____| |   / _ \|  _ \| ____| \ | |__  /_ _|
+| | | |  _| | |  | | | | |_) |  _| |  \| | / / | | 
+| |_| | |___| |__| |_| |  _ <| |___| |\  |/ /_ | | 
+|____/|_____|_____\___/|_| \_\_____|_| \_/____|___|
+</a> 
+    </header>
+        <main>
+            <h1>Blog Posts</h1>
+            <div id="blog-posts">
+            </div>
+        </main>
+    </div>
+    
+    <footer class="footer">
+        Let's Connect: <a href="mailto:francesco@delorenzi.me" style="color: white;">francesco@delorenzi.me</a> - Bari (IT) - Porto (PT) - Digital Nomad
+
+    </footer>
+    <script>
+        // URL for the Medium RSS feed converted to JSON using RSS2JSON
+        const rssToJsonServiceBaseUrl = 'https://api.rss2json.com/v1/api.json';
+        const mediumRssFeed = 'https://medium.com/feed/@francescodelorenzi';
+
+        fetch(`${rssToJsonServiceBaseUrl}?rss_url=${mediumRssFeed}`)
+            .then(response => response.json())
+            .then(data => {
+                const postsContainer = document.getElementById('blog-posts');
+                // Check if we have items in the data
+                if (data.status === 'ok' && data.items.length > 0) {
+                    data.items.forEach(item => {
+                        const postElement = document.createElement('div');
+                        postElement.className = 'blog-post';
+                        // Parse the HTML content and extract the first paragraph for the abstract
+                        const parser = new DOMParser();
+                        const contentDoc = parser.parseFromString(item.content, 'text/html');
+                        const firstParagraph = contentDoc.querySelector('p');
+                        const abstract = firstParagraph ? firstParagraph.textContent : 'No abstract available.';
+
+                        postElement.innerHTML = `
+                            <h2><a href="${item.link}" target="_blank">${item.title}</a></h2>
+                            <p>${abstract}</p>
+                        `;
+                        postsContainer.appendChild(postElement);
+                    });
+                } else {
+                    postsContainer.innerHTML = '<p>No posts found.</p>';
+                }
+            })
+            .catch(error => {
+                document.getElementById('blog-posts').innerHTML = '<p>Error loading posts.</p>';
+                console.error('Error fetching Medium posts:', error);
+            });
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
