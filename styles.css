@@ -97,7 +97,10 @@ li {
   border-radius: 5px;
 }
 main a {
-  color: #000;
+  color: #222;
+}
+main.dark a {
+  color: white;
 }
 .blog-post figure {
   float: left;
@@ -307,4 +310,36 @@ main.dark h2 {
     display: block;
     text-align: left;
   }
+}
+.article-badge {
+  display: inline-block;
+  background: #555;
+  color: #ddd;
+  padding: 2px 8px;
+  margin-bottom: 6px;
+  border-radius: 3px;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.talk {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}
+.talk .project-title {
+  font-size: 1.3em;
+  margin-bottom: 6px;
+}
+.talk .project-description {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  font-size: 14px;
+}
+.talk .article-meta {
+  font-size: 13px;
+  color: #999;
+}
+.talk .article-meta a {
+  color: #666;
 }

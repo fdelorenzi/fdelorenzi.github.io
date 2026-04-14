@@ -3,13 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Francesco de Lorenzi | Secure Software Development & API Integration Expert | Tech Leader</title>
-
-
+    <title>Blog by Francesco de Lorenzi | Technical Leadership, Cybersecurity & AI</title>
+    <meta name="description" content="Blog by Francesco de Lorenzi — articles on technical leadership, fractional CTO insights, cybersecurity, product development, AI automation, and LeaderNova updates.">
+    <meta name="keywords" content="Francesco de Lorenzi blog, LeaderNova blog, technical leadership, cybersecurity, fractional CTO, AI automation, product development, SaaS, DevSecOps">
+    <meta name="author" content="Francesco de Lorenzi">
+    <link rel="canonical" href="https://delorenzi.me/blog.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Blog by Francesco de Lorenzi | Technical Leadership, Cybersecurity & AI">
+    <meta property="og:description" content="Articles on technical leadership, fractional CTO insights, cybersecurity, product development, and AI automation.">
+    <meta property="og:url" content="https://delorenzi.me/blog.html">
+    <meta property="og:site_name" content="Francesco de Lorenzi">
+    <meta property="og:image" content="https://delorenzi.me/img/logo.png">
+    <meta property="og:locale" content="en_US">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Blog by Francesco de Lorenzi">
+    <meta name="twitter:description" content="Articles on technical leadership, cybersecurity, product development, and AI automation.">
+    <meta name="twitter:image" content="https://delorenzi.me/img/logo.png">
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <style>
-
-    </style>
+    <!-- Structured Data: Blog -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Francesco de Lorenzi's Blog",
+      "description": "Thoughts on technical leadership, cybersecurity, product development, and AI.",
+      "url": "https://delorenzi.me/blog.html",
+      "author": { "@id": "https://delorenzi.me/#person" },
+      "publisher": { "@id": "https://delorenzi.me/#person" },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://delorenzi.me/" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://delorenzi.me/blog.html" }
+        ]
+      }
+    }
+    </script>
 </head>
 <body>
     <div id="nav" class="nav">
@@ -19,7 +50,7 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
-        <a href="press.html">Press</a>
+        <a href="press.html">Press & Talks</a>
         <a href="blog.html">Blog</a>
         <a href="contacts.html">Contacts</a>
     </div>
@@ -42,11 +73,9 @@ ____  _____ _     ___  ____  _____ _   _ ________
     </div>
     
     <footer class="footer">
-        Let's Connect: <a href="mailto:francesco@delorenzi.me" style="color: white;">francesco@delorenzi.me</a> - Bari (IT) - Porto (PT) - Digital Nomad
-
+        Let's Connect: <a href="mailto:francesco@delorenzi.me" style="color: white;">francesco@delorenzi.me</a> - Bari, Italy
     </footer>
     <script>
-        // URL for the Medium RSS feed converted to JSON using RSS2JSON
         const rssToJsonServiceBaseUrl = 'https://api.rss2json.com/v1/api.json';
         const mediumRssFeed = 'https://medium.com/feed/@francescodelorenzi';
 
@@ -54,12 +83,10 @@ ____  _____ _     ___  ____  _____ _   _ ________
             .then(response => response.json())
             .then(data => {
                 const postsContainer = document.getElementById('blog-posts');
-                // Check if we have items in the data
                 if (data.status === 'ok' && data.items.length > 0) {
                     data.items.forEach(item => {
                         const postElement = document.createElement('div');
                         postElement.className = 'blog-post';
-                        // Parse the HTML content and extract the first paragraph for the abstract
                         const parser = new DOMParser();
                         const contentDoc = parser.parseFromString(item.content, 'text/html');
                         const firstParagraph = contentDoc.querySelector('p');
