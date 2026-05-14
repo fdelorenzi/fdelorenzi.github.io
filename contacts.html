@@ -52,64 +52,60 @@
     }
     </script>
 </head>
-<body>
-    <div id="nav" class="nav">
-        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-            &#9776; Menu
-        </a>
+<body class="tui-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav id="nav" class="nav" aria-label="Primary">
+        <button class="icon" type="button" aria-controls="nav" aria-expanded="false" onclick="toggleMenu(this)">&#9776; Menu</button>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
-        <a href="press.html">Press & Talks</a>
+        <a href="press.html">Press &amp; Talks</a>
         <a href="blog.html">Blog</a>
-        <a href="contacts.html">Contacts</a>
+        <a href="contacts.html" aria-current="page">Contacts</a>
+    </nav>
+
+    <div class="container tui-container">
+        <main id="main" class="tui">
+            <div class="tui-window" role="presentation">
+                <div class="tui-titlebar">
+                    <span class="tui-traffic" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span class="tui-title">delorenzi.me — contact.vcard</span>
+                    <span class="tui-status"><span class="tui-dot" aria-hidden="true"></span>online</span>
+                </div>
+
+                <section class="tui-prompt" aria-label="Page header">
+                    <p class="line"><span class="sigil">$</span> cat contact.vcard</p>
+                    <h1 class="tui-name">Contact</h1>
+                    <p class="tui-tag">Available for fractional CTO engagements, product studio work, and security audits.<span class="caret" aria-hidden="true"></span></p>
+                </section>
+
+                <div class="tui-body">
+            <ul class="contact-list">
+                <li><span class="label">Email</span><a href="mailto:francesco@delorenzi.me">francesco@delorenzi.me</a></li>
+                <li><span class="label">LeaderNova</span><a href="https://leadernova.com" target="_blank" rel="noopener">leadernova.com</a></li>
+                <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/francescodelorenzi" target="_blank" rel="noopener nofollow">francescodelorenzi</a></li>
+                <li><span class="label">GitHub</span><a href="https://github.com/fdelorenzi" target="_blank" rel="noopener nofollow">fdelorenzi</a></li>
+                <li><span class="label">Medium</span><a href="https://medium.com/@francescodelorenzi" target="_blank" rel="noopener nofollow">@francescodelorenzi</a></li>
+                <li><span class="label">Sessionize</span><a href="https://sessionize.com/fdelorenzi/" target="_blank" rel="noopener nofollow">fdelorenzi</a></li>
+                <li><span class="label">Location</span><span>Bari, Italy</span></li>
+            </ul>
+                </div>
+
+                <div class="tui-statusbar" aria-hidden="true">
+                    <span><b>F1</b>&nbsp;home</span>
+                    <span><b>F2</b>&nbsp;about</span>
+                    <span><b>F3</b>&nbsp;projects</span>
+                    <span><b>F4</b>&nbsp;press</span>
+                    <span class="sb-spacer"></span>
+                    <span class="sb-loc">BARI · IT</span>
+                    <span class="sb-uptime">UP&nbsp;15+&nbsp;YRS</span>
+                </div>
+            </div>
+        </main>
     </div>
 
-    <div class="container">
-    <header class="ascii-art">
-    <a href="index.html">
-____  _____ _     ___  ____  _____ _   _ ________ 
-|  _ \| ____| |   / _ \|  _ \| ____| \ | |__  /_ _|
-| | | |  _| | |  | | | | |_) |  _| |  \| | / / | | 
-| |_| | |___| |__| |_| |  _ <| |___| |\  |/ /_ | | 
-|____/|_____|_____\___/|_| \_\_____|_| \_/____|___|
-</a> 
-    </header>
-        <main>
-                <h1>Contact</h1>
-        <div class="contact-item">
-            <label>Email:</label>
-            <a href="mailto:francesco@delorenzi.me">francesco@delorenzi.me</a>
-        </div>
-        <div class="contact-item">
-            <label>LeaderNova:</label>
-            <a href="https://www.leadernova.com" target="_blank">www.leadernova.com</a>
-        </div>
-        <div class="contact-item">
-            <label>LinkedIn:</label>
-            <a href="https://www.linkedin.com/in/francescodelorenzi" target="_blank" rel="nofollow">francescodelorenzi</a>
-        </div>
-        <div class="contact-item">
-            <label>GitHub:</label>
-            <a href="https://github.com/fdelorenzi" target="_blank" rel="nofollow">fdelorenzi</a>
-        </div>
-        <div class="contact-item">
-            <label>Medium:</label>
-            <a href="https://medium.com/@francescodelorenzi" target="_blank" rel="nofollow">@francescodelorenzi</a>
-        </div>
-        <div class="contact-item">
-            <label>Sessionize:</label>
-            <a href="https://sessionize.com/fdelorenzi/" target="_blank" rel="nofollow">fdelorenzi</a>
-        </div>
-        <div class="contact-item">
-            <label>Location:</label>
-            <div class="contact-location">Bari, Italy</div>
-        </div>
-            </main>
-    </div>
-    
     <footer class="footer">
-        Let's Connect: <a href="mailto:francesco@delorenzi.me" style="color: white;">francesco@delorenzi.me</a> - Bari, Italy
+        Let's connect: <a href="mailto:francesco@delorenzi.me">francesco@delorenzi.me</a> — Bari, Italy
     </footer>
     <script type="text/javascript" src="script.js"></script>
 </body>

@@ -84,39 +84,43 @@
     }
     </script>
 </head>
-<body>
-    <div id="nav" class="nav">
-        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-            &#9776; Menu
-        </a>
+<body class="tui-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav id="nav" class="nav" aria-label="Primary">
+        <button class="icon" type="button" aria-controls="nav" aria-expanded="false" onclick="toggleMenu(this)">&#9776; Menu</button>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="press.html">Press & Talks</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="press.html">Press &amp; Talks</a>
         <a href="blog.html">Blog</a>
         <a href="contacts.html">Contacts</a>
-    </div>
+    </nav>
 
-    <div class="container">
-    <header class="ascii-art">
-    <a href="index.html">
-____  _____ _     ___  ____  _____ _   _ ________ 
-|  _ \| ____| |   / _ \|  _ \| ____| \ | |__  /_ _|
-| | | |  _| | |  | | | | |_) |  _| |  \| | / / | | 
-| |_| | |___| |__| |_| |  _ <| |___| |\  |/ /_ | | 
-|____/|_____|_____\___/|_| \_\_____|_| \_/____|___|
-</a> 
-    </header>
-        <main>
-            <h1>Selected Work</h1>
-            <p>A mix of current engagements, earlier product work, and open-source contributions. Client names anonymised where under NDA.</p>
+    <div class="container tui-container">
+        <main id="main" class="tui">
+            <div class="tui-window" role="presentation">
+                <div class="tui-titlebar">
+                    <span class="tui-traffic" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span class="tui-title">delorenzi.me — projects/</span>
+                    <span class="tui-status"><span class="tui-dot" aria-hidden="true"></span>online</span>
+                </div>
+
+                <section class="tui-prompt" aria-label="Page header">
+                    <p class="line"><span class="sigil">$</span> ls -la projects/</p>
+                    <h1 class="tui-name">Selected Work</h1>
+                    <p class="tui-tag">Client engagements (anonymised where under NDA) and personal / open-source projects.<span class="caret" aria-hidden="true"></span></p>
+                </section>
+
+                <div class="tui-body">
+
+            <h2 class="section-h">Client engagements</h2>
 
             <div class="project">
-                <img src="img/project.png" alt="Marketplace Automation SaaS">
+                <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h20l-1.5 3H3.5L2 7z"/><path d="M4 10v9a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-9"/><path d="M4 7l2-4h12l2 4"/><path d="M9 20v-5h6v5"/></svg></div>
                 <div>
                     <div class="project-title">Marketplace Automation SaaS (Onport, Farfetch Group)</div>
                     <div class="project-description">
-                       E-commerce marketplace automation platform serving 200+ clients connected to 30,000+ vendors, managing millions of orders per year. Led technology strategy, product roadmap, engineering teams, cloud infrastructure, and application security. Supported technical due diligence for the company's successful acquisition.
+                       E-commerce marketplace automation platform serving 200+ clients connected to 30,000+ vendors, managing millions of orders per year. Led technology strategy, product roadmap, engineering teams, cloud infrastructure, and application security. Supported the technical due diligence behind both exits — acquisition by Farfetch in 2022 and a second M&A in 2025.
                     </div>
                     <div class="project-tags">
                         <span>CTO</span>
@@ -129,7 +133,7 @@ ____  _____ _     ___  ____  _____ _   _ ________
             </div>
 
             <div class="project">
-                <img src="img/project.png" alt="Marketplace Platform at Scale">
+                <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5" fill="currentColor"/></svg></div>
                 <div>
                     <div class="project-title">Marketplace Platform at Scale (Vinted)</div>
                     <div class="project-description">
@@ -144,16 +148,14 @@ ____  _____ _     ___  ____  _____ _   _ ________
             </div>
 
             <div class="project">
-                <img src="img/project.png" alt="Flight Simulation SaaS">
+                <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1L15 22v-1.5L13 19v-5.5L21 16z"/></svg></div>
                 <div>
                     <div class="project-title">Flight Simulation SaaS Platform</div>
                     <div class="project-description">
-                       Technical leadership and product development for a flight simulation platform. Broadcast API architecture, MSFS integration, ICAO aircraft mapping, real-time data pipelines.
+                       Technical leadership and product development for an aviation simulation platform. Real-time broadcast architecture, third-party simulator integration, aviation data pipelines, and broadcast-grade infrastructure for live flights.
                     </div>
                     <div class="project-tags">
                         <span>Technical Leadership</span>
-                        <span>Python</span>
-                        <span>FastAPI</span>
                         <span>Real-time Systems</span>
                         <span>Aviation</span>
                     </div>
@@ -161,7 +163,7 @@ ____  _____ _     ___  ____  _____ _   _ ________
             </div>
 
             <div class="project">
-                <img src="img/project.png" alt="Luxury Hospitality Platform">
+                <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></svg></div>
                 <div>
                     <div class="project-title">Luxury Hospitality Platform Migration</div>
                     <div class="project-description">
@@ -177,15 +179,15 @@ ____  _____ _     ___  ____  _____ _   _ ________
             </div>
 
             <div class="project">
-                <img src="img/project.png" alt="Agri-food E-Commerce">
+                <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19.2 3a1 1 0 0 1 1.8.6 12 12 0 0 1-9 14.4"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg></div>
                 <div>
                     <div class="project-title">Agri-food E-Commerce Platform</div>
                     <div class="project-description">
-                       PrestaShop 9 migration, carrier integrations (FedEx, BRT), PostHog analytics, CloudFlare proxy, GDPR-compliant session tracking for a Puglia-based food producer.
+                       E-commerce platform migration for a Puglia-based food producer. International shipping carrier integrations, product analytics instrumentation, edge-routing, and GDPR-compliant session tracking.
                     </div>
                     <div class="project-tags">
                         <span>E-Commerce</span>
-                        <span>PrestaShop</span>
+                        <span>Migration</span>
                         <span>Analytics</span>
                         <span>GDPR</span>
                     </div>
@@ -193,7 +195,7 @@ ____  _____ _     ___  ____  _____ _   _ ________
             </div>
 
             <div class="project">
-                <img src="img/project.png" alt="Marketing Hub Platform">
+                <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></div>
                 <div>
                     <div class="project-title">Marketing Hub SaaS Platform</div>
                     <div class="project-description">
@@ -208,7 +210,7 @@ ____  _____ _     ___  ____  _____ _   _ ________
             </div>
 
             <div class="project">
-                <img src="img/project.png" alt="Property Management Consolidation">
+                <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22v-5h6v5"/><path d="M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M16 14h.01"/></svg></div>
                 <div>
                     <div class="project-title">Property Management Platform Consolidation</div>
                     <div class="project-description">
@@ -223,7 +225,7 @@ ____  _____ _     ___  ____  _____ _   _ ________
             </div>
 
             <div class="project">
-                <img src="img/project.png" alt="CTO Mentorship">
+                <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88"/></svg></div>
                 <div>
                     <div class="project-title">CTO Mentorship Engagement</div>
                     <div class="project-description">
@@ -238,52 +240,22 @@ ____  _____ _     ___  ____  _____ _   _ ________
             </div>
 
             <div class="project">
-                <img src="img/project.png" alt="Invoicing Automation">
+                <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1z"/><path d="M9 8h6"/><path d="M9 12h6"/><path d="M9 16h4"/></svg></div>
                 <div>
                     <div class="project-title">Passive Invoicing Automation</div>
                     <div class="project-description">
-                       n8n workflow automation for Italian accounting (FattureInCloud). Automated PDF/XML invoice registration, autofattura for non-Italian suppliers, human-in-the-loop review.
+                       Back-office workflow automation for Italian accounting. End-to-end ingestion and registration of incoming invoices, automated handling of cross-border supplier invoicing, and human-in-the-loop review for edge cases. Replaced hours of repetitive manual work each week.
                     </div>
                     <div class="project-tags">
                         <span>Automation</span>
-                        <span>n8n</span>
                         <span>Accounting</span>
+                        <span>Back-office</span>
                     </div>
                 </div>
             </div>
 
             <div class="project">
-                <img src="img/project.png" alt="WhatsApp Forensic Exporter">
-                <div>
-                    <div class="project-title">WhatsApp Forensic Exporter</div>
-                    <div class="project-description">
-                       Open-source tool for acquisition and export of WhatsApp evidence in forensically sound format. Used by digital forensics practitioners.
-                    </div>
-                    <div class="project-tags">
-                        <span>Digital Forensics</span>
-                        <span>Open Source</span>
-                        <span>Python</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="img/project.png" alt="KillSgrunt">
-                <div>
-                    <div class="project-title">KillSgrunt Malware Removal Tool</div>
-                    <div class="project-description">
-                       Built at age 12. Over 300,000 downloads. Identified and removed the Sgrunt/Master69 malware. Featured on BBC News, RAIUNO, ANSA, Panorama.
-                    </div>
-                    <div class="project-tags">
-                        <span>Cybersecurity</span>
-                        <span>Malware Analysis</span>
-                        <span>Reverse Engineering</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="img/project.png" alt="Hospital Information System">
+                <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
                 <div>
                     <div class="project-title">Hospital Information System</div>
                     <div class="project-description">Custom messaging queue system and third-party API integration for a healthcare platform. HL7 data exchange.</div>
@@ -296,33 +268,33 @@ ____  _____ _     ___  ____  _____ _   _ ________
             </div>
 
             <div class="project">
-                <img src="img/project.png" alt="Hospitality Property Management">
+                <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg></div>
                 <div>
                     <div class="project-title">Hospitality Property Management Application</div>
                     <div class="project-description">Full-stack application with touch-screen kiosk and third-party system integrations for a hospitality group.</div>
                     <div class="project-tags">
                         <span>Hospitality</span>
-                        <span>Laravel</span>
-                        <span>API Integration</span>
+                        <span>Kiosk</span>
+                        <span>System Integration</span>
                     </div>
                 </div>
             </div>
 
             <div class="project">
-                <img src="img/project.png" alt="Municipality Tax Application">
+                <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/><line x1="2" y1="18" x2="22" y2="18"/></svg></div>
                 <div>
                     <div class="project-title">Municipality Tax Application</div>
-                    <div class="project-description">Connected with the Italian PagoPa payment system for municipal tax collection.</div>
+                    <div class="project-description">Municipal tax collection platform integrated with the Italian national payment system. Citizen-facing payment flows, reconciliation, and back-office tooling for the municipality.</div>
                     <div class="project-tags">
                         <span>Government</span>
-                        <span>PagoPa</span>
-                        <span>ASP.NET</span>
+                        <span>Payments</span>
+                        <span>Public Sector</span>
                     </div>
                 </div>
             </div>
 
             <div class="project">
-                <img src="img/project.png" alt="ERP Integration">
+                <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="18" r="3"/><path d="M6 9v6"/><path d="M9 18a9 9 0 0 0 9-9"/></svg></div>
                 <div>
                     <div class="project-title">Project Management / ERP Integration</div>
                     <div class="project-description">Custom application server to sync incremental data between Asana and an online ERP system.</div>
@@ -335,13 +307,107 @@ ____  _____ _     ___  ____  _____ _   _ ________
                 </div>
             </div>
 
-            <p><a href="https://www.flaticon.com/free-icons/project" title="project icons" rel="nofollow">Project icons created by Us and Up - Flaticon</a></p>
-        
-            </main>
+            <h2 class="section-h">Personal &amp; open-source</h2>
+
+            <div class="project">
+                <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-1.1 4.2 8.5 8.5 0 0 1-7.4 4.3 8.4 8.4 0 0 1-4.2-1.1L3 20l1.1-4.3a8.4 8.4 0 0 1-1.1-4.2 8.5 8.5 0 0 1 4.3-7.4A8.4 8.4 0 0 1 11.5 3"/><circle cx="17.5" cy="6.5" r="3.5"/><path d="m22 11-2-2"/></svg></div>
+                <div>
+                    <div class="project-title"><a href="https://github.com/fdelorenzi/whatsapp-forensic-exporter" target="_blank" rel="noopener">WhatsApp Forensic Exporter</a></div>
+                    <div class="project-description">
+                       Open-source tool for acquisition and export of WhatsApp evidence in forensically sound format. Used by digital forensics practitioners.
+                    </div>
+                    <div class="project-tags">
+                        <span>Digital Forensics</span>
+                        <span>Open Source</span>
+                        <span>Python</span>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg></div>
+                <div>
+                    <div class="project-title"><a href="https://github.com/fdelorenzi/voice-memo-forensics" target="_blank" rel="noopener">Voice Memo Forensics</a></div>
+                    <div class="project-description">
+                       Open-source tool to audit iOS Voice Memo recordings and identify signs of tampering or alteration. For digital forensics practitioners and expert witnesses.
+                    </div>
+                    <div class="project-tags">
+                        <span>Digital Forensics</span>
+                        <span>iOS</span>
+                        <span>Audio</span>
+                        <span>Python</span>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m21 16-4 4-4-4"/><path d="M17 20V4"/><path d="m3 8 4-4 4 4"/><path d="M7 4v16"/></svg></div>
+                <div>
+                    <div class="project-title"><a href="https://github.com/fdelorenzi/vulnerable-flask-llm-app" target="_blank" rel="noopener">Vulnerable Flask + LLM App</a></div>
+                    <div class="project-description">
+                       A deliberately vulnerable Flask + SQLAlchemy application demonstrating common LLM-application security flaws — prompt injection, insecure tool use, data leakage. Used for hands-on training sessions and security talks.
+                    </div>
+                    <div class="project-tags">
+                        <span>Cybersecurity</span>
+                        <span>LLM&nbsp;Security</span>
+                        <span>OWASP&nbsp;Top&nbsp;10&nbsp;for&nbsp;LLMs</span>
+                        <span>Python</span>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></div>
+                <div>
+                    <div class="project-title">KillSgrunt Malware Removal Tool</div>
+                    <div class="project-description">
+                       Built at age 12. Over 300,000 downloads. Identified and removed the Sgrunt/Master69 malware. Featured on BBC News, RAIUNO, ANSA, Panorama. Users were invited to donate to humanitarian organisations in lieu of payment — and many did.
+                    </div>
+                    <div class="project-tags">
+                        <span>Cybersecurity</span>
+                        <span>Malware Analysis</span>
+                        <span>Reverse Engineering</span>
+                        <span>Historical</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M8 11h6"/><path d="M11 8v6"/></svg></div>
+                <div>
+                    <div class="project-title">Kamomilla 1.0 — Process &amp; Startup Reputation Scanner</div>
+                    <div class="project-description">
+                       Follow-up to KillSgrunt (2006). Reputation-based scanner for active processes and Windows startup entries, querying an online database to flag each entry by trust level. Three modules: Processes, Startup (Registry + Autorun), Help. As with KillSgrunt, the project ran on goodwill — users were invited to donate to humanitarian organisations instead of paying for the tool.
+                    </div>
+                    <div class="project-tags">
+                        <span>Cybersecurity</span>
+                        <span>Threat Intelligence</span>
+                        <span>Process Analysis</span>
+                        <span>Windows</span>
+                        <span>Historical</span>
+                    </div>
+                </div>
+            </div>
+                </div>
+
+                <div class="tui-statusbar" aria-hidden="true">
+                    <span><b>F1</b>&nbsp;home</span>
+                    <span><b>F2</b>&nbsp;about</span>
+                    <span><b>F3</b>&nbsp;press</span>
+                    <span><b>F4</b>&nbsp;contact</span>
+                    <span class="sb-spacer"></span>
+                    <span class="sb-loc">BARI · IT</span>
+                    <span class="sb-uptime">UP&nbsp;15+&nbsp;YRS</span>
+                </div>
+            </div>
+        </main>
     </div>
     
     <footer class="footer">
-        Let's Connect: <a href="mailto:francesco@delorenzi.me" style="color: white;">francesco@delorenzi.me</a> - Bari, Italy
+        Let's connect: <a href="mailto:francesco@delorenzi.me">francesco@delorenzi.me</a> — Bari, Italy
     </footer>
     <script type="text/javascript" src="script.js"></script>
 </body>

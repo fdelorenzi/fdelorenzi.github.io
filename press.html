@@ -45,16 +45,28 @@
             "position": 1,
             "item": {
               "@type": "Event",
-              "name": "Vibe-Coding Security: Securing AI-Generated Codebases",
+              "name": "From Vibe Code to Production: Scaling Fast and Staying Secure",
               "performer": { "@id": "https://delorenzi.me/#person" },
               "location": { "@type": "Place", "name": "PugliaTechs, Bari, Italy" },
-              "startDate": "2025",
-              "description": "The AI coding revolution shipped a security crisis. This talk covers real-world vulnerabilities in AI-generated codebases."
+              "startDate": "2026-03-23T18:30+01:00",
+              "description": "The AI coding revolution shipped a security crisis. Real-world vulnerabilities in AI-generated codebases and how to scale fast without breaking trust."
             }
           },
           {
             "@type": "ListItem",
             "position": 2,
+            "item": {
+              "@type": "Event",
+              "name": "From Signals to Personas: The Data-Driven Future of Marketing with AI",
+              "performer": { "@id": "https://delorenzi.me/#person" },
+              "location": { "@type": "Place", "name": "BurdaForward Italia, Bari" },
+              "startDate": "2025-10-28T17:00+01:00",
+              "description": "Tech track at PugliaTechs Friends. How buyer-audience modelling is shifting from rule-based segmentation to probabilistic, AI-driven strategies."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
             "item": {
               "@type": "Event",
               "name": "Think like a Hacker: Protect Web and LLM Applications",
@@ -66,7 +78,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 3,
+            "position": 4,
             "item": {
               "@type": "Event",
               "name": "Stop Reinventing the Wheel: Build What Really Matters",
@@ -78,7 +90,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 4,
+            "position": 5,
             "item": {
               "@type": "MediaObject",
               "name": "Interviewed by BBC News & World Service",
@@ -90,43 +102,52 @@
     }
     </script>
 </head>
-<body>
-    <div id="nav" class="nav">
-        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-            &#9776; Menu
-        </a>
+<body class="tui-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav id="nav" class="nav" aria-label="Primary">
+        <button class="icon" type="button" aria-controls="nav" aria-expanded="false" onclick="toggleMenu(this)">&#9776; Menu</button>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
-        <a href="press.html">Press & Talks</a>
+        <a href="press.html" aria-current="page">Press &amp; Talks</a>
         <a href="blog.html">Blog</a>
         <a href="contacts.html">Contacts</a>
-    </div>
+    </nav>
 
-    <div class="container">
-    <header class="ascii-art">
-    <a href="index.html">
-____  _____ _     ___  ____  _____ _   _ ________ 
-|  _ \| ____| |   / _ \|  _ \| ____| \ | |__  /_ _|
-| | | |  _| | |  | | | | |_) |  _| |  \| | / / | | 
-| |_| | |___| |__| |_| |  _ <| |___| |\  |/ /_ | | 
-|____/|_____|_____\___/|_| \_\_____|_| \_/____|___|
-</a> 
-    </header>
-        <main>
-            <h1>Press & Speaking</h1>
+    <div class="container tui-container">
+        <main id="main" class="tui">
+            <div class="tui-window" role="presentation">
+                <div class="tui-titlebar">
+                    <span class="tui-traffic" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span class="tui-title">delorenzi.me — press_talks.log</span>
+                    <span class="tui-status"><span class="tui-dot" aria-hidden="true"></span>online</span>
+                </div>
 
-            <div class="about-section">
-                <h2>Talks Spotlight</h2>
+                <section class="tui-prompt" aria-label="Page header">
+                    <p class="line"><span class="sigil">$</span> tail -f press_talks.log</p>
+                    <h1 class="tui-name">Press &amp; Speaking</h1>
+                    <p class="tui-tag">Talks, interviews, and coverage — past and present.<span class="caret" aria-hidden="true"></span></p>
+                </section>
+
+                <div class="tui-body">
+                <h2 class="section-h">Talks Spotlight</h2>
+
+            <div class="talk">
+                <div class="article-badge">Talk</div>
+                <div class="project-title">From Vibe Code to Production: Scaling Fast and Staying Secure</div>
+                <div class="project-description">
+                    The AI coding revolution shipped a security crisis. This talk covers the real-world vulnerabilities emerging from AI-generated codebases pushed to production without security review: misconfigured Supabase RLS, exposed service role keys, SECURITY DEFINER functions in public schema, and more. Live demos of scanning and exploitation.
+                </div>
+                <div class="article-meta">PugliaTechs · Mon 23 Mar 2026, 18:30 CET · Bari, Italy</div>
             </div>
 
             <div class="talk">
                 <div class="article-badge">Talk</div>
-                <div class="project-title">Vibe-Coding Security: Securing AI-Generated Codebases</div>
+                <div class="project-title">From Signals to Personas: The Data-Driven Future of Marketing with AI</div>
                 <div class="project-description">
-                    The AI coding revolution shipped a security crisis. This talk covers the real-world vulnerabilities emerging from AI-generated codebases pushed to production without security review: misconfigured Supabase RLS, exposed service role keys, SECURITY DEFINER functions in public schema, and more. Live demos of scanning and exploitation.
+                    Tech track at PugliaTechs Friends @ BurdaForward Italia. How buyer-audience modelling is shifting from rule-based segmentation to probabilistic, AI-driven strategies — turning behavioural signals into actionable audience profiles for modern marketing teams.
                 </div>
-                <div class="article-meta">PugliaTechs, 2025 · Bari, Italy</div>
+                <div class="article-meta">PugliaTechs Friends · Tue 28 Oct 2025, 17:00 CET · BurdaForward Italia, Bari · Livestream on YouTube</div>
             </div>
 
             <div class="talk">
@@ -168,17 +189,27 @@ ____  _____ _     ___  ____  _____ _   _ ________
                 <div class="article-meta"><a href="https://www.youtube.com/watch?v=rZJAwuEcBNQ" target="_blank" rel="nofollow">Watch on YouTube</a></div>
             </div>
 
-            <div class="about-section" style="margin-top: 30px;">
-                <h2>Press & Media</h2>
-            </div>
+            <h2 class="section-h" style="margin-top: 36px;">Press &amp; Media</h2>
 
             <div id="article-list">
+            </div>
+                </div>
+
+                <div class="tui-statusbar" aria-hidden="true">
+                    <span><b>F1</b>&nbsp;home</span>
+                    <span><b>F2</b>&nbsp;about</span>
+                    <span><b>F3</b>&nbsp;projects</span>
+                    <span><b>F4</b>&nbsp;contact</span>
+                    <span class="sb-spacer"></span>
+                    <span class="sb-loc">BARI · IT</span>
+                    <span class="sb-uptime">UP&nbsp;15+&nbsp;YRS</span>
+                </div>
             </div>
         </main>
     </div>
     
     <footer class="footer">
-        Let's Connect: <a href="mailto:francesco@delorenzi.me" style="color: white;">francesco@delorenzi.me</a> - Bari, Italy
+        Let's connect: <a href="mailto:francesco@delorenzi.me">francesco@delorenzi.me</a> — Bari, Italy
     </footer>
     <script>
         const articles = [
@@ -186,7 +217,20 @@ ____  _____ _     ___  ____  _____ _   _ ________
     title: 'Interviewed by BBC News & World Service',
     description: 'Coverage of the KillSgrunt malware removal tool. Christian Fraser\'s service.',
     country: 'UK',
-    url: '',
+    links: [
+      { label: 'BBC CBBC Newsround', url: 'http://news.bbc.co.uk/cbbcnews/hi/newsid_5120000/newsid_5121800/5121862.stm' }
+    ],
+    date: '2006-06',
+    category: 'Press'
+  },
+  {
+    title: 'Featured by BBC Romanian',
+    description: 'BBC Romanian coverage of the KillSgrunt story — "Geniu la computere" (Computer genius).',
+    country: 'Romania',
+    links: [
+      { label: 'BBC Romanian', url: 'https://www.bbc.co.uk/romanian/news/story/2006/06/060622_geniu_computere.shtml' }
+    ],
+    date: '2006-06-22',
     category: 'Press'
   },
   {
@@ -259,18 +303,23 @@ ____  _____ _     ___  ____  _____ _   _ ________
         function createArticleElement(article) {
             const articleEl = document.createElement('div');
             articleEl.className = 'article';
-            const date = article.date ? ' - ' + new Date(article.date).toLocaleDateString() : '';
+            const date = article.date ? ' · ' + new Date(article.date).toLocaleDateString() : '';
             const badge = article.category ? `<span class="article-badge">${article.category}</span>` : '';
+            const links = Array.isArray(article.links) && article.links.length
+                ? article.links
+                : (article.url ? [{ label: 'Link', url: article.url }] : []);
+            const linksHtml = links.length
+                ? `<div class="article-links">${links.map(l =>
+                    `<a class="article-link" href="${l.url}" target="_blank" rel="noopener nofollow">${l.label} ↗</a>`
+                  ).join('')}</div>`
+                : '';
             articleEl.innerHTML = `
                 ${badge}
                 <div class="article-title">${article.title}</div>
                 <div class="article-description no-strip-text">${article.description}</div>
                 <div class="article-meta">${article.country}${date}</div>
+                ${linksHtml}
             `;
-            if(article.url) {
-                articleEl.innerHTML = articleEl.innerHTML +
-                `<a class="article-link" href="${article.url}" target="_blank">Link</a>`;
-            }
             return articleEl;
         }
 

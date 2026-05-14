@@ -40,7 +40,7 @@
         "worksFor": {
           "@type": "Organization",
           "name": "LeaderNova",
-          "url": "https://www.leadernova.com"
+          "url": "https://leadernova.com"
         },
         "address": {
           "@type": "PostalAddress",
@@ -105,32 +105,35 @@
     }
     </script>
 </head>
-<body>
-    <div id="nav" class="nav">
-        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-            &#9776; Menu
-        </a>
+<body class="tui-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav id="nav" class="nav" aria-label="Primary">
+        <button class="icon" type="button" aria-controls="nav" aria-expanded="false" onclick="toggleMenu(this)">&#9776; Menu</button>
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <a href="about.html" aria-current="page">About</a>
         <a href="projects.html">Projects</a>
-        <a href="press.html">Press & Talks</a>
+        <a href="press.html">Press &amp; Talks</a>
         <a href="blog.html">Blog</a>
         <a href="contacts.html">Contacts</a>
-    </div>
+    </nav>
 
-    <div class="container">
-    <header class="ascii-art">
-    <a href="index.html">
-____  _____ _     ___  ____  _____ _   _ ________ 
-|  _ \| ____| |   / _ \|  _ \| ____| \ | |__  /_ _|
-| | | |  _| | |  | | | | |_) |  _| |  \| | / / | | 
-| |_| | |___| |__| |_| |  _ <| |___| |\  |/ /_ | | 
-|____/|_____|_____\___/|_| \_\_____|_| \_/____|___|
-</a> 
-    </header>
-            <main>
-                <h2>About</h2>
-                <img src="img/logo.png" class="about-image" />
+    <div class="container tui-container">
+        <main id="main" class="tui">
+            <div class="tui-window" role="presentation">
+                <div class="tui-titlebar">
+                    <span class="tui-traffic" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span class="tui-title">delorenzi.me — about.md</span>
+                    <span class="tui-status"><span class="tui-dot" aria-hidden="true"></span>online</span>
+                </div>
+
+                <section class="tui-prompt" aria-label="Page header">
+                    <p class="line"><span class="sigil">$</span> cat about.md</p>
+                    <h1 class="tui-name">About</h1>
+                    <p class="tui-tag">Engineer · technical leader · founder.<span class="caret" aria-hidden="true"></span></p>
+                </section>
+
+                <div class="tui-body">
+                <img src="img/portrait-crt.png" class="about-image" alt="Phosphor-green CRT portrait of Francesco de Lorenzi" width="180" height="180" loading="eager" />
                 <div class="about-section">
                     <p>
                         Software engineer and technical leader with over 15 years of experience building and securing products across diverse industries. From hands-on engineering to CTO to founder, always at the intersection of technical leadership, product delivery, and security.
@@ -142,11 +145,11 @@ ____  _____ _     ___  ____  _____ _   _ ________
 
                 <div class="about-section">
                     <h2>What I Do Now</h2>
-                    <ul class="icon-list">
-                        <li>I run <a href="https://www.leadernova.com" target="_blank"><b>LeaderNova</b></a>, a tech-leadership and product studio based in Puglia, Italy. We serve clients across 8+ countries, embedding as outcome owners rather than vendors. Our work spans fractional CTO leadership, dedicated product teams, AI and business automation, custom SaaS development, and vibe-code security audits.</li>
-                        <li>I support <b>Vinted</b> as Product Engineer, contributing to high-performance marketplace platform development at scale.</li>
-                        <li>I serve as <b>Vice President at <a href="https://pugliatechs.com" target="_blank">PugliaTechs</a></b>, a nonprofit working to transform Puglia into a global tech hub by connecting startups, investors, institutions, and professionals.</li>
-                        <li>I work as a <b>computer forensics consultant</b> for law firms and law enforcement in criminal and civil proceedings, and contribute open-source tools for forensic evidence acquisition and analysis.</li>
+                    <ul class="bullets">
+                        <li><span class="lead" aria-hidden="true">»</span>I run <a href="https://leadernova.com" target="_blank" rel="noopener"><b>LeaderNova</b></a>, a tech-leadership and product studio based in Puglia, Italy. We serve clients across 8+ countries, embedding as outcome owners rather than vendors. Our work spans fractional CTO leadership, dedicated product teams, AI and business automation, custom SaaS development, and vibe-code security audits.</li>
+                        <li><span class="lead" aria-hidden="true">»</span>I support <b>Vinted</b> as Product Engineer, contributing to high-performance marketplace platform development at scale.</li>
+                        <li><span class="lead" aria-hidden="true">»</span>I serve as <b>Vice President at <a href="https://pugliatechs.com" target="_blank" rel="noopener">PugliaTechs</a></b>, a nonprofit working to transform Puglia into a global tech hub by connecting startups, investors, institutions, and professionals. Co-organising PugliaHack 2026.</li>
+                        <li><span class="lead" aria-hidden="true">»</span>I work as a <b>computer forensics consultant</b> for law firms and law enforcement in criminal and civil proceedings, and contribute open-source tools for forensic evidence acquisition and analysis.</li>
                     </ul>
                 </div>
 
@@ -165,9 +168,9 @@ ____  _____ _     ___  ____  _____ _   _ ________
                     <h2>Career</h2>
 
                     <div class="job">
-                      <h3>CEO & Founder | <a href="https://www.leadernova.com" target="_blank">LeaderNova</a></h3>
+                      <h3>CEO & Founder | <a href="https://leadernova.com" target="_blank">LeaderNova</a></h3>
                       <p>Feb 2025 - Present · Bari, Italy</p>
-                      <p>Tech-leadership and product studio serving startups, scaling businesses, and ops-heavy SMBs across EU and US markets. Five service lines: Fractional CTO & Strategy, Dedicated Product Teams, Custom SaaS Development, AI & Business Automation, and Vibe-Code Security Audits.</p>
+                      <p>Tech-leadership and product studio serving startups, scaling businesses, and ops-heavy SMBs across EU, US, and APAC markets. Five service lines: Fractional CTO & Strategy, Dedicated Product Teams, Custom SaaS Development, AI & Business Automation, and Vibe-Code Security Audits.</p>
                     </div>
 
                     <div class="job">
@@ -179,13 +182,13 @@ ____  _____ _     ___  ____  _____ _   _ ________
                     <div class="job">
                       <h3>Vice President | <a href="https://pugliatechs.com" target="_blank">PugliaTechs</a></h3>
                       <p>Jul 2025 - Present · Bari, Italy</p>
-                      <p>Nonprofit working to position Puglia as a global tech hub. Connecting startups, investors, institutions, and professionals across AI, cleantech, life sciences, and agritech.</p>
+                      <p>Nonprofit working to position Puglia as a global tech hub. Connecting startups, investors, institutions, and professionals across AI, cleantech, life sciences, space, and agritech. Co-organising PugliaHack 2026.</p>
                     </div>
 
                     <div class="job">
                       <h3>CTO | Onport (Acquired, formerly Farfetch Group)</h3>
                       <p>2021 - 2025 · Remote</p>
-                      <p>E-commerce marketplace automation SaaS serving 200+ clients connected to 30,000+ vendors, managing millions of orders per year. Led technology strategy, product roadmap, engineering teams, and cloud infrastructure. Oversaw the application security program and supported technical due diligence for the company's successful M&A process.</p>
+                      <p>E-commerce marketplace automation SaaS serving 200+ clients connected to 30,000+ vendors, managing millions of orders per year. Joined in 2021 and took on broader technical leadership remits over four years, ultimately serving as CTO. Led technology strategy, product roadmap, engineering teams, and cloud infrastructure. Oversaw the application security program and supported technical due diligence behind both of Onport's exits — acquisition by Farfetch in 2022 and a second M&A in 2025.</p>
                     </div>
 
                     <div class="job">
@@ -197,11 +200,100 @@ ____  _____ _     ___  ____  _____ _   _ ________
 
                 <p>I solve complex technical problems with the objectivity of code and data, while keeping an empathetic approach to the people involved. If it doesn't create genuine human value, it's not worth building.</p>
                 <p>When the laptop is off: traveling, fitness, music, DJ-ing.</p>
-            </main>
+
+                <section id="tooling" class="panel panel--inline" aria-label="Tooling and stack">
+                    <h2 class="panel-title">tooling_&amp;_stack</h2>
+
+                    <p class="stack-label">// product &amp; engineering</p>
+                    <div class="tag-cloud">
+                        <span class="large">TypeScript</span>
+                        <span class="medium">JavaScript</span>
+                        <span class="large">React</span>
+                        <span class="large">Next.js</span>
+                        <span class="medium">NestJS</span>
+                        <span class="medium">ExpressJS</span>
+                        <span class="medium">NodeJS</span>
+                        <span class="large">Python</span>
+                        <span class="medium">FastAPI</span>
+                        <span class="medium">Django</span>
+                        <span class="medium">PHP</span>
+                        <span class="medium">Laravel</span>
+                        <span class="small">.NET&nbsp;Core</span>
+                        <span class="small">C#</span>
+                        <span class="small">Java</span>
+                        <span class="medium">PostgreSQL</span>
+                        <span class="medium">MySQL</span>
+                        <span class="small">SQL&nbsp;Server</span>
+                        <span class="small">NoSQL</span>
+                        <span class="medium">RabbitMQ</span>
+                        <span class="medium">HL7</span>
+                        <span class="medium">k6</span>
+                    </div>
+
+                    <p class="stack-label">// cloud &amp; infrastructure</p>
+                    <div class="tag-cloud">
+                        <span class="large">GCP</span>
+                        <span class="large">Supabase</span>
+                        <span class="large">Vercel</span>
+                        <span class="medium">Cloud&nbsp;Run</span>
+                        <span class="medium">Pulumi</span>
+                        <span class="medium">Cloudflare&nbsp;Zero&nbsp;Trust</span>
+                        <span class="medium">AWS</span>
+                        <span class="medium">Docker</span>
+                        <span class="medium">Linux</span>
+                    </div>
+
+                    <p class="stack-label">// ai &amp; automation</p>
+                    <div class="tag-cloud">
+                        <span class="large">AI&nbsp;Agents</span>
+                        <span class="large">LLMs</span>
+                        <span class="medium">Agno</span>
+                        <span class="medium">LangChain</span>
+                        <span class="medium">Langfuse</span>
+                        <span class="medium">Temporal</span>
+                        <span class="medium">Trigger.dev</span>
+                        <span class="medium">n8n</span>
+                        <span class="medium">Anthropic</span>
+                        <span class="medium">OpenAI</span>
+                        <span class="medium">Vertex&nbsp;AI</span>
+                        <span class="medium">LiveKit</span>
+                        <span class="medium">HeyGen</span>
+                    </div>
+
+                    <p class="stack-label">// security &amp; forensics</p>
+                    <div class="tag-cloud">
+                        <span class="large">DevSecOps</span>
+                        <span class="large">OWASP</span>
+                        <span class="medium">Semgrep</span>
+                        <span class="medium">Trivy</span>
+                        <span class="medium">Nuclei</span>
+                        <span class="medium">TruffleHog</span>
+                        <span class="medium">Gitleaks</span>
+                        <span class="medium">MobSF</span>
+                        <span class="medium">MOBILedit</span>
+                        <span class="medium">Autopsy</span>
+                        <span class="medium">CAINE</span>
+                        <span class="medium">Wazuh</span>
+                        <span class="medium">Database&nbsp;Security</span>
+                    </div>
+                </section>
+                </div>
+
+                <div class="tui-statusbar" aria-hidden="true">
+                    <span><b>F1</b>&nbsp;home</span>
+                    <span><b>F2</b>&nbsp;projects</span>
+                    <span><b>F3</b>&nbsp;press</span>
+                    <span><b>F4</b>&nbsp;contact</span>
+                    <span class="sb-spacer"></span>
+                    <span class="sb-loc">BARI · IT</span>
+                    <span class="sb-uptime">UP&nbsp;15+&nbsp;YRS</span>
+                </div>
+            </div>
+        </main>
     </div>
     
     <footer class="footer">
-        Let's Connect: <a href="mailto:francesco@delorenzi.me" style="color: white;">francesco@delorenzi.me</a> - Bari, Italy
+        Let's connect: <a href="mailto:francesco@delorenzi.me">francesco@delorenzi.me</a> — Bari, Italy
     </footer>
     <script type="text/javascript" src="script.js"></script>
 </body>

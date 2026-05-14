@@ -8,6 +8,7 @@
     <meta name="keywords" content="Francesco de Lorenzi blog, LeaderNova blog, technical leadership, cybersecurity, fractional CTO, AI automation, product development, SaaS, DevSecOps">
     <meta name="author" content="Francesco de Lorenzi">
     <link rel="canonical" href="https://delorenzi.me/blog.html">
+    <link rel="alternate" type="application/rss+xml" title="Medium — Francesco de Lorenzi" href="https://medium.com/feed/@francescodelorenzi">
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Blog by Francesco de Lorenzi | Technical Leadership, Cybersecurity & AI">
@@ -42,70 +43,110 @@
     }
     </script>
 </head>
-<body>
-    <div id="nav" class="nav">
-        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-            &#9776; Menu
-        </a>
+<body class="tui-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav id="nav" class="nav" aria-label="Primary">
+        <button class="icon" type="button" aria-controls="nav" aria-expanded="false" onclick="toggleMenu(this)">&#9776; Menu</button>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
-        <a href="press.html">Press & Talks</a>
-        <a href="blog.html">Blog</a>
+        <a href="press.html">Press &amp; Talks</a>
+        <a href="blog.html" aria-current="page">Blog</a>
         <a href="contacts.html">Contacts</a>
-    </div>
+    </nav>
 
-    <div class="container">
-    <header class="ascii-art">
-    <a href="index.html">
-____  _____ _     ___  ____  _____ _   _ ________ 
-|  _ \| ____| |   / _ \|  _ \| ____| \ | |__  /_ _|
-| | | |  _| | |  | | | | |_) |  _| |  \| | / / | | 
-| |_| | |___| |__| |_| |  _ <| |___| |\  |/ /_ | | 
-|____/|_____|_____\___/|_| \_\_____|_| \_/____|___|
-</a> 
-    </header>
-        <main>
-            <h1>Blog Posts</h1>
+    <div class="container tui-container">
+        <main id="main" class="tui">
+            <div class="tui-window" role="presentation">
+                <div class="tui-titlebar">
+                    <span class="tui-traffic" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span class="tui-title">delorenzi.me — blog.feed</span>
+                    <span class="tui-status"><span class="tui-dot" aria-hidden="true"></span>online</span>
+                </div>
+
+                <section class="tui-prompt" aria-label="Page header">
+                    <p class="line"><span class="sigil">$</span> rss --feed medium --tail 10</p>
+                    <h1 class="tui-name">Blog</h1>
+                    <p class="tui-tag">Long-form on Medium — <a href="https://medium.com/@francescodelorenzi" target="_blank" rel="noopener">@francescodelorenzi</a>. Mirrored here, rebuilt nightly.<span class="caret" aria-hidden="true"></span></p>
+                </section>
+
+                <div class="tui-body">
             <div id="blog-posts">
+                <!-- BLOG_POSTS_START -->
+                <article class="blog-post">
+                    <h2><a href="https://medium.com/@francescodelorenzi/building-success-brick-by-brick-the-power-of-incremental-goals-ffed1d2d38bc?source=rss-7d8c39679162------2" target="_blank" rel="noopener">Building Success Brick by Brick: The Power of Incremental Goals</a></h2>
+                    <p class="article-meta"><time datetime="2024-01-29">2024-01-29</time></p>
+                    <p>Embarking on the path to Team Success requires a strategic approach to goal-setting with a sustainable trajectory toward achieving KPIs. This article takes inspiration from “The Power of Small Wins”, published by Teresa Amabile and Steven J. Kramer in the May 2021 Issue of Harva…</p>
+                </article>
+                <article class="blog-post">
+                    <h2><a href="https://medium.com/@francescodelorenzi/adapting-mindsets-for-simple-to-complex-it-challenges-7e9815310e38?source=rss-7d8c39679162------2" target="_blank" rel="noopener">Adapting Mindsets for Simple to Complex IT Challenges</a></h2>
+                    <p class="article-meta"><time datetime="2024-01-29">2024-01-29</time></p>
+                    <p>Every day, IT professionals encounter multiple types of issues, ranging from routine tasks to intricacies that require a nuanced approach. In this article, we delve into one angle of looking at problem-solving within IT, exploring the distinctions between simple, complex, and co…</p>
+                </article>
+                <article class="blog-post">
+                    <h2><a href="https://medium.com/@francescodelorenzi/energy-management-for-sustainable-team-efficiency-6d50be077dad?source=rss-7d8c39679162------2" target="_blank" rel="noopener">Energy Management for Sustainable Team Efficiency</a></h2>
+                    <p class="article-meta"><time datetime="2024-01-29">2024-01-29</time></p>
+                    <p>Photo by Gerzon Piñata from Pexels: https://www.pexels.com/photo/woman-in-white-shirt-sitting-on-chair-9512007/ In today’s fast paced work environment, the performance of our teams is often quantified by KPIs. We tirelessly strive to exceed goals, optimize workflows, and consist…</p>
+                </article>
+                <!-- BLOG_POSTS_END -->
+            </div>
+            <p class="article-meta" id="blog-meta">
+                <!-- BLOG_META_START -->
+                Rebuilt 2026-05-13 21:17 UTC · 3 posts
+                <!-- BLOG_META_END -->
+            </p>
+                </div>
+
+                <div class="tui-statusbar" aria-hidden="true">
+                    <span><b>F1</b>&nbsp;home</span>
+                    <span><b>F2</b>&nbsp;about</span>
+                    <span><b>F3</b>&nbsp;projects</span>
+                    <span><b>F4</b>&nbsp;contact</span>
+                    <span class="sb-spacer"></span>
+                    <span class="sb-loc">BARI · IT</span>
+                    <span class="sb-uptime">UP&nbsp;15+&nbsp;YRS</span>
+                </div>
             </div>
         </main>
     </div>
-    
+
     <footer class="footer">
-        Let's Connect: <a href="mailto:francesco@delorenzi.me" style="color: white;">francesco@delorenzi.me</a> - Bari, Italy
+        Let's connect: <a href="mailto:francesco@delorenzi.me">francesco@delorenzi.me</a> — Bari, Italy
     </footer>
     <script>
-        const rssToJsonServiceBaseUrl = 'https://api.rss2json.com/v1/api.json';
-        const mediumRssFeed = 'https://medium.com/feed/@francescodelorenzi';
-
-        fetch(`${rssToJsonServiceBaseUrl}?rss_url=${mediumRssFeed}`)
-            .then(response => response.json())
-            .then(data => {
-                const postsContainer = document.getElementById('blog-posts');
-                if (data.status === 'ok' && data.items.length > 0) {
-                    data.items.forEach(item => {
-                        const postElement = document.createElement('div');
-                        postElement.className = 'blog-post';
-                        const parser = new DOMParser();
-                        const contentDoc = parser.parseFromString(item.content, 'text/html');
-                        const firstParagraph = contentDoc.querySelector('p');
-                        const abstract = firstParagraph ? firstParagraph.textContent : 'No abstract available.';
-
-                        postElement.innerHTML = `
-                            <h2><a href="${item.link}" target="_blank">${item.title}</a></h2>
-                            <p>${abstract}</p>
-                        `;
-                        postsContainer.appendChild(postElement);
-                    });
-                } else {
-                    postsContainer.innerHTML = '<p>No posts found.</p>';
-                }
-            })
-            .catch(error => {
-                document.getElementById('blog-posts').innerHTML = '<p>Error loading posts.</p>';
-                console.error('Error fetching Medium posts:', error);
-            });
+        // Runtime fallback: if the static prerender is empty (e.g. before the first
+        // workflow run), fetch the Medium feed on the client so we never show "Loading…".
+        (function () {
+            var container = document.getElementById('blog-posts');
+            if (!container) return;
+            var hasPosts = container.querySelector('.blog-post');
+            if (hasPosts) return;
+            fetch('https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent('https://medium.com/feed/@francescodelorenzi'))
+                .then(function (r) { return r.json(); })
+                .then(function (data) {
+                    if (data.status !== 'ok' || !data.items || !data.items.length) {
+                        container.innerHTML = '<p>No posts yet. Read on <a href="https://medium.com/@francescodelorenzi" target="_blank" rel="noopener">Medium</a>.</p>';
+                        return;
+                    }
+                    var html = data.items.slice(0, 10).map(function (item) {
+                        var doc = new DOMParser().parseFromString(item.content, 'text/html');
+                        var p = doc.querySelector('p');
+                        var abstract = p ? p.textContent.trim() : '';
+                        if (abstract.length > 280) abstract = abstract.slice(0, 277) + '…';
+                        var date = new Date(item.pubDate);
+                        var dateStr = isNaN(date) ? '' : date.toISOString().slice(0, 10);
+                        return '<article class="blog-post">' +
+                            '<h2><a href="' + item.link + '" target="_blank" rel="noopener">' + item.title + '</a></h2>' +
+                            (dateStr ? '<p class="article-meta">' + dateStr + '</p>' : '') +
+                            '<p>' + abstract + '</p>' +
+                        '</article>';
+                    }).join('');
+                    container.innerHTML = html;
+                })
+                .catch(function () {
+                    container.innerHTML = '<p>Couldn\'t load posts. Read on <a href="https://medium.com/@francescodelorenzi" target="_blank" rel="noopener">Medium</a>.</p>';
+                });
+        })();
     </script>
     <script type="text/javascript" src="script.js"></script>
 </body>

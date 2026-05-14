@@ -1,8 +1,7 @@
-function toggleMenu() {
-  var x = document.getElementById("nav");
-  if (x.className === "nav") {
-    x.className += " responsive";
-  } else {
-    x.className = "nav";
+function toggleMenu(btn) {
+  var nav = document.getElementById("nav");
+  var open = nav.classList.toggle("responsive");
+  if (btn && btn.setAttribute) {
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
   }
 }

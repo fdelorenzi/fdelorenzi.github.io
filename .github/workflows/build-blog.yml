@@ -1,0 +1,47 @@
+name: Prerender blog from Medium
+
+on:
+  # Rebuild nightly so new Medium posts land as static HTML for SEO + perf.
+  schedule:
+    - cron: "17 5 * * *"
+  # Manual trigger
+  workflow_dispatch:
+  # Also run after a push that might affect the template or script.
+  push:
+    branches: [main]
+    paths:
+      - "blog.html"
+      - "scripts/build-blog.mjs"
+      - ".github/workflows/build-blog.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-blog
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Prerender Medium posts into blog.html
+        run: node scripts/build-blog.mjs
+
+      - name: Commit changes if any
+        run: |
+          if [[ -n "$(git status --porcelain blog.html)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add blog.html
+            git commit -m "chore(blog): refresh prerendered Medium posts"
+            git push
+          else
+            echo "No changes."
+          fi

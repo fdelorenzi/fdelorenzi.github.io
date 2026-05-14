@@ -1,0 +1,272 @@
+# Francesco de Lorenzi
+
+> CEO & Founder of LeaderNova, a tech-leadership and product studio. Software engineer and technical leader with 15+ years of experience building, securing, and leading software products at scale. Based in Bari, Italy, serving clients across EU, US, and APAC markets.
+
+- Website: https://delorenzi.me
+- Email: francesco@delorenzi.me
+- Location: Bari, Puglia, Italy
+- LinkedIn: https://www.linkedin.com/in/francescodelorenzi
+- GitHub: https://github.com/fdelorenzi
+- Medium: https://medium.com/@francescodelorenzi
+- Sessionize: https://sessionize.com/fdelorenzi/
+- Company: https://leadernova.com
+
+---
+
+## Summary
+
+Software engineer and technical leader with over 15 years of experience building and securing products across diverse industries. From hands-on engineering to CTO to founder, always at the intersection of technical leadership, product delivery, and security.
+
+My relationship with software and cybersecurity started in 2005 when I built my first malware removal tool at age 12. It was downloaded over 300,000 times and covered by BBC News, RAIUNO, ANSA, and Panorama. That early experience shaped how I think about building things: solve real problems, ship them, and take security seriously from day one.
+
+I solve complex technical problems with the objectivity of code and data, while keeping an empathetic approach to the people involved. If it doesn't create genuine human value, it's not worth building.
+
+When the laptop is off: traveling, fitness, music, DJ-ing.
+
+## Current Status
+
+- Role: CEO & Founder, LeaderNova
+- Base: Bari, IT — serving EU + US + APAC
+- Availability: Open to fractional CTO & advisory engagements
+- Reach: Clients in 8+ countries
+- Focus: Tech leadership · product · security · AI
+
+## What I Do Now
+
+- I run **LeaderNova**, a tech-leadership and product studio based in Puglia, Italy. We serve clients across 8+ countries, embedding as outcome owners rather than vendors. Our work spans fractional CTO leadership, dedicated product teams, AI and business automation, custom SaaS development, and vibe-code security audits.
+- I support **Vinted** as Product Engineer, contributing to high-performance marketplace platform development at scale.
+- I serve as **Vice President at PugliaTechs**, a nonprofit working to transform Puglia into a global tech hub by connecting startups, investors, institutions, and professionals.
+- I work as a **computer forensics consultant** for law firms and law enforcement in criminal and civil proceedings, and contribute open-source tools for forensic evidence acquisition and analysis.
+
+## Areas of Focus
+
+- **Technical Leadership**: Fractional CTO engagements, CTO mentorship, delivery system design, roadmap alignment, and engineering culture.
+- **Product & Engineering**: End-to-end product development for SaaS, marketplace, and automation platforms. Modern stack: Next.js, NestJS, FastAPI, Supabase, Vercel.
+- **Cybersecurity**: DevSecOps, web application security, penetration testing, vibe-code security audits for AI-generated codebases, OWASP Top 10 and OWASP Top 10 for LLMs.
+- **AI & Automation**: Business process automation, AI agent development, systems integration, n8n workflow orchestration.
+- **Digital Forensics**: Mobile and web evidence acquisition, OSINT/SOCMINT, expert witness in criminal and civil proceedings.
+
+## Engagement Modes
+
+Fractional CTO · Product Studio · Custom SaaS · AI Automation · DevSecOps · Security Audits · Digital Forensics · Advisory & Coaching
+
+---
+
+## Career
+
+### CEO & Founder — LeaderNova
+*Feb 2025 – Present · Bari, Italy*
+
+Tech-leadership and product studio serving startups, scaling businesses, and ops-heavy SMBs across EU, US, and APAC markets. Five service lines: Fractional CTO & Strategy, Dedicated Product Teams, Custom SaaS Development, AI & Business Automation, and Vibe-Code Security Audits.
+
+### Product Engineer — Vinted
+*May 2025 – Present · Remote*
+
+Contributing to marketplace platform development at scale.
+
+### Vice President — PugliaTechs
+*Jul 2025 – Present · Bari, Italy*
+
+Nonprofit working to position Puglia as a global tech hub. Connecting startups, investors, institutions, and professionals across AI, cleantech, life sciences, and agritech.
+
+### CTO — Onport (Acquired, formerly Farfetch Group)
+*2021 – 2025 · Remote*
+
+E-commerce marketplace automation SaaS serving 200+ clients connected to 30,000+ vendors, managing millions of orders per year. Led technology strategy, product roadmap, engineering teams, and cloud infrastructure. Oversaw the application security program and supported technical due diligence for the company's successful M&A process.
+
+### Founder — Francy Solutions
+*2011 – 2021*
+
+Founded and led a software development and consultancy firm for a decade. Led a global network of 80+ contractors across projects in healthcare, e-commerce, warehouse management, hospitality, trading, and government systems. Designed and delivered integrations across 60+ third-party APIs. Performed web application security assessments and trained engineering teams on secure development practices.
+
+---
+
+## Tooling & Stack
+
+### Product & Engineering
+TypeScript · JavaScript · React · Next.js · NestJS · ExpressJS · NodeJS · Python · FastAPI · Django · PHP · Laravel · .NET Core · C# · Java · PostgreSQL · MySQL · SQL Server · NoSQL · RabbitMQ · HL7 · k6
+
+### Cloud & Infrastructure
+GCP · Supabase · Vercel · Cloud Run · Pulumi · Cloudflare Zero Trust · AWS · Docker · Linux
+
+### AI & Automation
+AI Agents · LLMs · Agno · LangChain · Langfuse · Temporal · Trigger.dev · n8n · Anthropic · OpenAI · Vertex AI · LiveKit · HeyGen
+
+### Security & Forensics
+DevSecOps · OWASP · Semgrep · Trivy · Nuclei · TruffleHog · Gitleaks · MobSF · MVT · MOBILedit · Autopsy · CAINE · Wazuh · Supabase RLS & PostgREST hardening
+
+---
+
+## Selected Projects
+
+### Client Engagements
+
+**Marketplace Automation SaaS (Onport, Farfetch Group)**
+E-commerce marketplace automation platform serving 200+ clients connected to 30,000+ vendors, managing millions of orders per year. Led technology strategy, product roadmap, engineering teams, cloud infrastructure, and application security. Supported technical due diligence for the company's successful acquisition.
+Tags: CTO · Product · E-Commerce · Application Security · M&A
+
+**Marketplace Platform at Scale (Vinted)**
+Product engineering for one of Europe's largest online marketplaces. Contributing to high-performance platform development at scale.
+Tags: Product Engineering · Marketplace · Scale
+
+**Flight Simulation SaaS Platform**
+Technical leadership and product development for an aviation simulation platform. Real-time broadcast architecture, third-party simulator integration, aviation data pipelines, and broadcast-grade infrastructure for live flights.
+Tags: Technical Leadership · Real-time Systems · Aviation
+
+**Luxury Hospitality Platform Migration**
+Technical leadership for property management migration across 700+ luxury properties. Systems integration, automation, and vendor coordination.
+Tags: Technical Leadership · Migration · Hospitality · 700+ Properties
+
+**Agri-food E-Commerce Platform**
+E-commerce platform migration for a Puglia-based food producer. International shipping carrier integrations, product analytics instrumentation, edge-routing, and GDPR-compliant session tracking.
+Tags: E-Commerce · Migration · Analytics · GDPR
+
+**Marketing Hub SaaS Platform**
+Product development and technical leadership for a US-based marketing automation platform. Full-stack SaaS build.
+Tags: SaaS · Product Development · Marketing Automation
+
+**Property Management Platform Consolidation**
+Phase 4 consolidation for a property management SaaS. Architecture review, technical debt reduction, delivery stabilisation.
+Tags: SaaS · Architecture · Technical Debt
+
+**CTO Mentorship Engagement**
+Guided discovery methodology for a startup CTO. Error management, CI/CD, architectural decision-making. Mini-RFC format with ownership transfer model.
+Tags: Fractional CTO · Mentorship · CI/CD
+
+**Passive Invoicing Automation**
+Back-office workflow automation for Italian accounting. End-to-end ingestion and registration of incoming invoices, automated handling of cross-border supplier invoicing, and human-in-the-loop review for edge cases. Replaced hours of repetitive manual work each week.
+Tags: Automation · Accounting · Back-office
+
+**Hospital Information System**
+Custom messaging queue system and third-party API integration for a healthcare platform. HL7 data exchange.
+Tags: Healthcare · HL7 · API Integration
+
+**Hospitality Property Management Application**
+Full-stack application with touch-screen kiosk and third-party system integrations for a hospitality group.
+Tags: Hospitality · Kiosk · System Integration
+
+**Municipality Tax Application**
+Municipal tax collection platform integrated with the Italian national payment system. Citizen-facing payment flows, reconciliation, and back-office tooling for the municipality.
+Tags: Government · Payments · Public Sector
+
+**Project Management / ERP Integration**
+Custom application server to sync incremental data between Asana and an online ERP system.
+Tags: NestJS · TypeScript · API Integration · CI/CD
+
+### Personal & Open Source
+
+**WhatsApp Forensic Exporter** — https://github.com/fdelorenzi/whatsapp-forensic-exporter
+Open-source tool for acquisition and export of WhatsApp evidence in forensically sound format. Used by digital forensics practitioners.
+Tags: Digital Forensics · Open Source · Python
+
+**Voice Memo Forensics** — https://github.com/fdelorenzi/voice-memo-forensics
+Open-source tool to audit iOS Voice Memo recordings and identify signs of tampering or alteration. For digital forensics practitioners and expert witnesses.
+Tags: Digital Forensics · iOS · Audio · Python
+
+**Vulnerable Flask + LLM App** — https://github.com/fdelorenzi/vulnerable-flask-llm-app
+A deliberately vulnerable Flask + SQLAlchemy application demonstrating common LLM-application security flaws — prompt injection, insecure tool use, data leakage. Used for hands-on training sessions and security talks.
+Tags: Cybersecurity · LLM Security · OWASP Top 10 for LLMs · Python
+
+**KillSgrunt Malware Removal Tool**
+Built at age 12. Over 300,000 downloads. Identified and removed the Sgrunt/Master69 malware. Featured on BBC News, RAIUNO, ANSA, Panorama. Users were invited to donate to humanitarian organisations in lieu of payment — and many did.
+Tags: Cybersecurity · Malware Analysis · Reverse Engineering · Historical
+
+**Kamomilla 1.0 — Process & Startup Reputation Scanner**
+Follow-up to KillSgrunt (2006). Reputation-based scanner for active processes and Windows startup entries, querying an online database to flag each entry by trust level. Three modules: Processes, Startup (Registry + Autorun), Help. As with KillSgrunt, the project ran on goodwill — users were invited to donate to humanitarian organisations instead of paying for the tool.
+Tags: Cybersecurity · Threat Intelligence · Process Analysis · Windows · Historical
+
+---
+
+## Speaking & Talks
+
+**From Vibe Code to Production: Scaling Fast and Staying Secure**
+PugliaTechs · Mon 23 Mar 2026, 18:30 CET · Bari, Italy
+The AI coding revolution shipped a security crisis. Real-world vulnerabilities emerging from AI-generated codebases pushed to production without security review: misconfigured Supabase RLS, exposed service role keys, SECURITY DEFINER functions in public schema, and more. Live demos of scanning and exploitation.
+
+**From Signals to Personas: The Data-Driven Future of Marketing with AI**
+PugliaTechs Friends · Tue 28 Oct 2025, 17:00 CET · BurdaForward Italia, Bari · Livestream on YouTube
+Tech track. How buyer-audience modelling is shifting from rule-based segmentation to probabilistic, AI-driven strategies — turning behavioural signals into actionable audience profiles for modern marketing teams.
+
+**Stop Reinventing the Wheel: Build What Really Matters**
+PugliaTechs Talk · Jan 2025 · Bari International Airport (Aeroporti di Puglia)
+Practical strategies for saving time, reducing complexity, and staying ahead in an evolving tech landscape. For seasoned entrepreneurs and aspiring developers alike.
+
+**Think like a Hacker: Protect Web and LLM Applications**
+PyBari · June 2024 · Data Masters, Bari, Italy
+How does a hacker think when targeting web applications and Large Language Models? Interactive session walking through vulnerabilities affecting both traditional web apps and LLM-powered applications. Real-time attack simulations on apps built with Python, Node.js, and PHP.
+
+**AI For Startups: Rapid MVPs**
+ITME Tech Connect · April 2024 · Porto, Portugal
+Hands-on session walking through the full process of leveraging AI to build prototypes and MVPs with minimal to no code. From frontend design to backend development.
+
+**Conference @ Liceo Oriani, Corato** — https://www.youtube.com/watch?v=SWNv2M61QNE
+**Conference @ ITC V.Giordano, Bitonto** — https://www.youtube.com/watch?v=rZJAwuEcBNQ
+
+---
+
+## Press & Media
+
+**Interviewed by BBC News & World Service** (UK, 2006-06)
+Coverage of the KillSgrunt malware removal tool. Christian Fraser's service.
+Link: http://news.bbc.co.uk/cbbcnews/hi/newsid_5120000/newsid_5121800/5121862.stm
+
+**Featured by BBC Romanian** (Romania, 2006-06-22)
+BBC Romanian coverage of the KillSgrunt story — "Geniu la computere" (Computer genius).
+Link: https://www.bbc.co.uk/romanian/news/story/2006/06/060622_geniu_computere.shtml
+
+**Interviewed by Unomattina (RAIUNO)** (Italy, 2006-06-07)
+Featured on Italian national television.
+
+**Photographic Editorial by ANSA** (Italy)
+Covered by ANSA press releases.
+
+**Interviewed by Panorama** (Italy)
+Article by G. Castellano.
+
+**Reviewed by Punto-Informatico** (Italy)
+ICT online publication review of the KillSgrunt tool.
+
+**Interviewed by SAT2000** (Italy)
+
+**Featured in Gazzetta del Mezzogiorno** (Italy)
+Coverage in various articles.
+
+**Interview by Italian Indie** (Italy)
+
+## Awards & Recognition
+
+**L'Alfiere del Sud Award** (Italy, 2011-05-21)
+Recognised for contributions in IT and Web.
+
+**KillSgrunt Removal Tool** (Italy, 2006)
+Over 300,000 downloads. Built at age 12. Identified and removed the Sgrunt/Master69 malware.
+
+---
+
+## Blog (Selected Posts on Medium — @francescodelorenzi)
+
+**Building Success Brick by Brick: The Power of Incremental Goals** (2024-01-29)
+Embarking on the path to Team Success requires a strategic approach to goal-setting with a sustainable trajectory toward achieving KPIs. Inspired by "The Power of Small Wins" by Teresa Amabile and Steven J. Kramer (Harvard Business Review, May 2021).
+https://medium.com/@francescodelorenzi/building-success-brick-by-brick-the-power-of-incremental-goals-ffed1d2d38bc
+
+**Adapting Mindsets for Simple to Complex IT Challenges** (2024-01-29)
+Every day, IT professionals encounter multiple types of issues, ranging from routine tasks to intricacies that require a nuanced approach. Exploring the distinctions between simple, complex, and complicated problems within IT.
+https://medium.com/@francescodelorenzi/adapting-mindsets-for-simple-to-complex-it-challenges-7e9815310e38
+
+**Energy Management for Sustainable Team Efficiency** (2024-01-29)
+In today's fast-paced work environment, team performance is often quantified by KPIs. Exploring sustainable approaches beyond pure workload optimization.
+https://medium.com/@francescodelorenzi/energy-management-for-sustainable-team-efficiency-6d50be077dad
+
+---
+
+## Contact
+
+- Email: francesco@delorenzi.me
+- LeaderNova: https://leadernova.com
+- LinkedIn: https://www.linkedin.com/in/francescodelorenzi
+- GitHub: https://github.com/fdelorenzi
+- Medium: https://medium.com/@francescodelorenzi
+- Sessionize: https://sessionize.com/fdelorenzi/
+- Location: Bari, Italy
+
+Available for fractional CTO engagements, product studio work, and security audits.

@@ -62,16 +62,16 @@
           "@type": "Organization",
           "@id": "https://delorenzi.me/#organization",
           "name": "LeaderNova",
-          "url": "https://www.leadernova.com",
+          "url": "https://leadernova.com",
           "founder": { "@id": "https://delorenzi.me/#person" },
-          "description": "Tech-leadership and product studio serving startups, scaling businesses, and ops-heavy SMBs across EU and US markets.",
+          "description": "Tech-leadership and product studio serving startups, scaling businesses, and ops-heavy SMBs across EU, US, and APAC markets.",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Bari",
             "addressRegion": "Puglia",
             "addressCountry": "IT"
           },
-          "areaServed": ["EU", "US"],
+          "areaServed": ["EU", "US", "APAC"],
           "knowsAbout": [
             "Fractional CTO",
             "Dedicated Product Teams",
@@ -91,48 +91,134 @@
     }
     </script>
 </head>
-<body>
-    <div id="nav" class="nav">
-        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-            &#9776; Menu
-        </a>
-        <a href="index.html">Home</a>
+<body class="tui-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav id="nav" class="nav" aria-label="Primary">
+        <button class="icon" type="button" aria-controls="nav" aria-expanded="false" onclick="toggleMenu(this)">&#9776; Menu</button>
+        <a href="index.html" aria-current="page">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
-        <a href="press.html">Press & Talks</a>
+        <a href="press.html">Press &amp; Talks</a>
         <a href="blog.html">Blog</a>
         <a href="contacts.html">Contacts</a>
+    </nav>
+
+    <div class="container tui-container">
+        <main id="main" class="tui">
+
+            <!-- Title bar: simulated terminal chrome -->
+            <div class="tui-window" role="presentation">
+                <div class="tui-titlebar">
+                    <span class="tui-traffic" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span class="tui-title">delorenzi.me — leadership.session</span>
+                    <span class="tui-status"><span class="tui-dot" aria-hidden="true"></span>online</span>
+                </div>
+
+                <!-- Identity prompt -->
+                <section class="tui-prompt tui-hero" aria-label="Introduction">
+                    <figure class="tui-portrait" aria-hidden="true">
+                        <span class="tui-portrait-corner tl">┌</span>
+                        <span class="tui-portrait-corner tr">┐</span>
+                        <span class="tui-portrait-corner bl">└</span>
+                        <span class="tui-portrait-corner br">┘</span>
+                        <img src="img/portrait-crt.png" alt="" width="180" height="180" loading="eager" />
+                        <figcaption>fdelorenzi</figcaption>
+                    </figure>
+                    <div class="tui-hero-text">
+                        <p class="line"><span class="sigil">$</span> whoami</p>
+                        <h1 class="tui-name">Francesco de Lorenzi</h1>
+                        <p class="tui-role">CEO &amp; Founder &middot; <a href="https://leadernova.com" target="_blank" rel="noopener">LeaderNova</a></p>
+                        <p class="tui-tag">15+ years building, securing, and leading software products at scale.<span class="caret" aria-hidden="true"></span></p>
+                    </div>
+                </section>
+
+                <!-- Status / vitals panel -->
+                <section class="panel" aria-label="Current status">
+                    <h2 class="panel-title">status</h2>
+                    <dl class="kv">
+                        <dt>role</dt><dd>CEO &amp; Founder, LeaderNova</dd>
+                        <dt>base</dt><dd>Bari, IT &middot; serving EU + US + APAC</dd>
+                        <dt>avail</dt><dd><span class="ok">●</span> open to fractional CTO &amp; advisory engagements</dd>
+                        <dt>reach</dt><dd>clients in 8+ countries</dd>
+                        <dt>focus</dt><dd>tech leadership · product · security · AI</dd>
+                    </dl>
+                </section>
+
+                <!-- Track record / leadership panel -->
+                <section class="panel" aria-label="Leadership track record">
+                    <h2 class="panel-title">track_record</h2>
+                    <ul class="ledger">
+                        <li><b>CEO &amp; Founder</b> &mdash; <a href="https://leadernova.com" target="_blank" rel="noopener">LeaderNova</a> · tech-leadership &amp; product studio</li>
+                        <li><b>Vice President</b> &mdash; <a href="https://pugliatechs.com" target="_blank" rel="noopener">PugliaTechs</a> · positioning Puglia as a global tech hub</li>
+                        <li><b>Product Engineer</b> &mdash; <a href="https://www.vinted.com" target="_blank" rel="noopener nofollow">Vinted</a> · marketplace platform at scale</li>
+                        <li><b>ex-CTO</b> &mdash; <a href="https://onport.com" target="_blank" rel="noopener nofollow">Onport</a> (<a href="https://www.farfetch.com" target="_blank" rel="noopener nofollow">Farfetch Group</a>) · led product &amp; engineering through two exits</li>
+                        <li><b>Decade leading</b> a global software consultancy across EU &amp; US</li>
+                        <li><b>Cybersecurity &amp; Forensics</b> consultant · law firms &amp; law enforcement</li>
+                    </ul>
+                </section>
+
+                <!-- Engagement modes -->
+                <section class="panel" aria-label="How we work">
+                    <h2 class="panel-title">engagement_modes</h2>
+                    <div class="chips">
+                        <span class="chip">Fractional&nbsp;CTO</span>
+                        <span class="chip">Product&nbsp;Studio</span>
+                        <span class="chip">Custom&nbsp;SaaS</span>
+                        <span class="chip">AI&nbsp;Automation</span>
+                        <span class="chip">DevSecOps</span>
+                        <span class="chip">Security&nbsp;Audits</span>
+                        <span class="chip">Digital&nbsp;Forensics</span>
+                        <span class="chip">Advisory&nbsp;&amp;&nbsp;Coaching</span>
+                    </div>
+                </section>
+
+                <!-- Core stack — compact four-domain summary; full breakdown on /about -->
+                <section class="panel" aria-label="Core stack">
+                    <h2 class="panel-title">core_stack</h2>
+                    <dl class="stack-grid">
+                        <dt>product</dt>
+                        <dd>TypeScript · React · Next.js · Python · FastAPI · NestJS · PostgreSQL</dd>
+
+                        <dt>cloud</dt>
+                        <dd>GCP · Supabase · Vercel · Pulumi · Cloudflare Zero Trust · AWS · Docker</dd>
+
+                        <dt>ai &amp; automation</dt>
+                        <dd>AI Agents · LLMs · Agno · LangChain · Langfuse · Temporal · Trigger.dev · n8n · Anthropic · OpenAI · Vertex AI · LiveKit</dd>
+
+                        <dt>security</dt>
+                        <dd>DevSecOps · OWASP · Semgrep · Trivy · TruffleHog · MobSF · Database Security</dd>
+                    </dl>
+                    <p class="stack-more"><a href="about.html#tooling">→ full tooling &amp; stack on /about</a></p>
+                </section>
+
+                <!-- CTA prompt -->
+                <section class="tui-cta" aria-label="Get in touch">
+                    <p class="line"><span class="sigil">$</span> ./reach --to francesco<span class="caret" aria-hidden="true"></span></p>
+                    <div class="cta-row">
+                        <a class="btn btn-primary" href="mailto:francesco@delorenzi.me">▶ Email me</a>
+                        <a class="btn" href="https://leadernova.com" target="_blank" rel="noopener">Visit LeaderNova</a>
+                        <a class="btn" href="https://www.linkedin.com/in/francescodelorenzi" target="_blank" rel="noopener">LinkedIn</a>
+                        <a class="btn" href="contacts.html">All channels →</a>
+                    </div>
+                </section>
+
+                <!-- Bottom status bar -->
+                <div class="tui-statusbar" aria-hidden="true">
+                    <span><b>F1</b>&nbsp;about</span>
+                    <span><b>F2</b>&nbsp;projects</span>
+                    <span><b>F3</b>&nbsp;press</span>
+                    <span><b>F4</b>&nbsp;blog</span>
+                    <span class="sb-spacer"></span>
+                    <span class="sb-loc">BARI · IT</span>
+                    <span class="sb-uptime">UP&nbsp;15+&nbsp;YRS</span>
+                </div>
+            </div>
+
+        </main>
     </div>
 
-    <div class="container">
-    <header class="ascii-art">
-    <a href="index.html">
-____  _____ _     ___  ____  _____ _   _ ________ 
-|  _ \| ____| |   / _ \|  _ \| ____| \ | |__  /_ _|
-| | | |  _| | |  | | | | |_) |  _| |  \| | / / | | 
-| |_| | |___| |__| |_| |  _ <| |___| |\  |/ /_ | | 
-|____/|_____|_____\___/|_| \_\_____|_| \_/____|___|
-</a>
-    </header>
-        <main class="dark">
-            <h1>Francesco de Lorenzi</h1>
-            <h2>CEO & Founder @ <a href="https://www.leadernova.com" target="_blank">LeaderNova</a></h2>
-            <h2>15+ years building and securing software products.</h2>
-            <div class="highlight">
-            <ul>
-                <li>🏢 <b>LeaderNova</b>: Tech-leadership and product studio. Clients across 8+ countries. Fractional CTO, dedicated product teams, AI automation, custom SaaS, and security audits.</li>
-                <li>🛒 <b>Vinted</b>: Product Engineer, contributing to marketplace platform development at scale.</li>
-                <li>🌍 <b><a href="https://pugliatechs.com" target="_blank">PugliaTechs</a></b>: Vice President, working to position Puglia as a global tech hub.</li>
-                <li>🔐 <b>Cybersecurity & Digital Forensics</b>: DevSecOps, penetration testing, computer forensics consultant for law firms and law enforcement.</li>
-                <li>📡 <b>Previously</b>: CTO at Onport (Farfetch Group). A decade leading a global software consultancy.</li>
-            </ul>
-        </div>
-            </main>
-    </div>
-  
-    
     <footer class="footer">
-        Let's Connect: <a href="mailto:francesco@delorenzi.me" style="color: white;">francesco@delorenzi.me</a> - Bari, Italy
+        Let's connect: <a href="mailto:francesco@delorenzi.me">francesco@delorenzi.me</a> — Bari, Italy
     </footer>
     <script type="text/javascript" src="script.js"></script>
 </body>
